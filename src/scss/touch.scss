@@ -1,0 +1,105 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.touch {
+	max-width: 111rem;
+	margin: 0 auto 9rem;
+	color: #192d0b;
+
+	&__title {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 3.2rem;
+
+		@media screen and (max-width: $large-size) {
+			text-align: center;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: $large-size) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__map {
+		border: 3px solid #a8d340;
+		width: 55%;
+
+		@media screen and (max-width: $large-size) {
+			margin-bottom: 3rem;
+			width: 90%;
+		}
+
+		// @media screen and (max-width: $medium-size) {
+		// 	width: 60rem;
+		// }
+
+		&_img {
+			width: 100%;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&_bel {
+			.touch__info {
+				&_1 {
+					height: 14.5rem;
+				}
+				&_2 {
+					height: 21.4rem;
+				}
+			}
+		}
+
+		&_kirgiz {
+			.touch__info {
+				&_1 {
+					height: 14rem;
+				}
+				&_2 {
+					height: 15.9rem;
+				}
+			}
+		}
+
+		&_1,
+		&_2 {
+			width: 44.5rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 2rem 0 2.5rem 2.5rem;
+			background-color: #e8ffb6;
+		}
+
+		&_1 {
+			margin-bottom: 3.2rem;
+		}
+
+		&_text {
+			display: flex;
+			align-items: center;
+			font-size: 1.6rem;
+
+			a:visited,
+			a:link {
+				color: #192d0b;
+				text-decoration: underline;
+			}
+		}
+
+		&_icon {
+			margin-right: 2.2rem;
+		}
+	}
+}

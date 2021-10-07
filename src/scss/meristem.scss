@@ -1,0 +1,110 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.meristem {
+	max-width: 111rem;
+	margin: 0 auto;
+	font-size: 2rem;
+	line-height: 2.8rem;
+	padding-bottom: 7rem;
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		color: #429221;
+	}
+
+	&__wrapper {
+		max-width: 90rem;
+	}
+
+	&__title {
+		font-size: 3.6rem;
+		text-align: center;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: 7rem;
+		padding-top: 4rem;
+	}
+
+	&__subtitle {
+		display: flex;
+		margin-bottom: 5rem;
+
+		@media screen and (max-width: $medium-size) {
+			flex-direction: column;
+		}
+
+		&_img {
+			width: 37rem;
+			margin-right: 10rem;
+
+			@media screen and (max-width: $medium-size) {
+				margin-bottom: 3rem;
+			}
+		}
+
+		&_text {
+			text-transform: uppercase;
+			font-size: 2.4rem;
+			font-weight: 700;
+		}
+	}
+
+	&__desc {
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: $medium-size) {
+			flex-direction: column;
+		}
+
+		&_name {
+			font-size: 2.4rem;
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__compos {
+		width: 47%;
+
+		@media screen and (max-width: $medium-size) {
+			margin-bottom: 3rem;
+			width: 100%;
+		}
+
+		&_title {
+			font-size: 2.4rem;
+		}
+
+		&_text {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
+	}
+
+	&__usage {
+		width: 47%;
+
+		@media screen and (max-width: $medium-size) {
+			width: 100%;
+		}
+
+		&_incatrop {
+			width: 100%;
+		}
+
+		&_title {
+			font-size: 2.4rem;
+		}
+
+		&_text {
+			&-red {
+				color: red;
+			}
+		}
+	}
+}

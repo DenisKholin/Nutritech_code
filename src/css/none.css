@@ -1,0 +1,35 @@
+.none {
+  max-width: 111rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 8rem;
+}
+
+.none__title {
+  margin: 1.7rem 0 2.4rem;
+}
+
+.none__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.none__contact_1 {
+  margin-top: 2.3rem;
+}
+
+.none__icon_1 {
+  margin-right: 3.7rem;
+}
+
+.none__icon_2 {
+  margin-right: 1rem;
+}

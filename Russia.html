@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+	<link rel="stylesheet" href="bundle.min.css">
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link rel="icon" href="src/img/logo.svg" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+
+	<title>Nutritech</title>
+</head>
+
+<body>
+
+
+	<header class="header" id="header">
+		<div class="header__inner">
+			<video autoplay muted preload loop class="header__video">
+				<source src="src/img/nutri.mp4" type="video/mp4">
+			</video>
+			<div class="header__logo_box">
+				<img src="src/img/logo.svg" alt="" class="header__logo">
+				<h1 class="header__title">Страны/дистрибьюторы - Россия</h1>
+			</div>
+
+			<div class="header__content_box">
+				<a href="index.html" class="header__item">Главная</a>
+				<div class="header__product">
+					<a class="header__item header__product_main">Наши продукты</a>
+					<ul class="header__product_list">
+						<li class="header__product_item header__product_item-1"><a href="meristem.html"
+								class="header__product_link">Meristem</a></li>
+						<li class="header__product_item header__product_item-2"><a href="ICL.html"
+								class="header__product_link">ICL</a></li>
+						<li class="header__product_item header__product_item-3"><a href="Incatrop.html"
+								class="header__product_link">Intracrop</a></li>
+
+					</ul>
+				</div>
+
+				<a href="country.html" class="header__item">Страны/Дистрибьюторы</a>
+
+				<span class="header__number">
+					<img src="src/img/phone.svg" alt="" class="header__number_icon"> +7(495) 783-7048
+				</span>
+				<span class="header__lang_switch">
+					<a href="" class="header__lang header__lang_en">EN</a>
+					/
+					<a href="" class="header__lang header__lang_ru">RU</a>
+				</span>
+			</div>
+
+		</div>
+	</header>
+
+	<section class="product">
+		<h2 class="product__title">Наша продукция</h2>
+		<div class="product__menu">
+			<div class="product__menu_item product__menu_item-active product__menu_item-1">Нутривант</div>
+			<div class="product__menu_item product__menu_item-2">Меристем</div>
+			<!-- <a href="" class="product__menu_item">Интракроп</a> -->
+		</div>
+
+		<div class="advan">
+			<div class="advan__container advan__container_1">
+				<a href="categories/stimax.html" class="advan__item advan__item_1">
+					<img src="src/img/biostimulator.png" alt="" class="advan__img">
+					<p class="advan__text">БИОСТИМУЛЯТОРЫ СТИМАКС</p>
+				</a>
+				<a href="categories/meristem.html" class="advan__item advan__item_2">
+					<img src="src/img/korrektor.png" alt="" class="advan__img">
+					<p class="advan__text">ДЕФИЦИТ КОРРЕКТОРОВ MERISTEM</p>
+				</a>
+				<a href="categories/meristem-micro.html" class="advan__item advan__item_3">
+					<img src="src/img/nutrimax-micro.png" alt="" class="advan__img">
+					<p class="advan__text">КОРРЕКТОРЫ ДЕФИЦИТА MERISTEM MICRO</p>
+				</a>
+			</div>
+			<div class="advan__container advan__container_2">
+				<a href="categories/kafom.html" class="advan__item advan__item_4">
+					<img src="src/img/fosfit.png" alt="" class="advan__img">
+					<p class="advan__text">ФОСФИТЫ
+						КАФОМ</p>
+				</a>
+				<a href="categories/istarka.html" class="advan__item advan__item_5">
+					<img src="src/img/Istarka.png" alt="" class="advan__img">
+					<p class="advan__text">ПОЛИФЛАВОНОИДЫ ИСТАРКА</p>
+				</a>
+				<a href="categories/aminomax.html" class="advan__item advan__item_6">
+					<img src="src/img/antistressant.png" alt="" class="advan__img">
+					<p class="advan__text">СНИЖЕНИЕ СТРЕССА АМИНОМАКС</p>
+				</a>
+			</div>
+
+		</div>
+
+
+		<div class="product__wrapper">
+			<button class="product__btn_prev">
+				<img src="src/img/left-arrow.svg" alt="">
+			</button>
+			<div class="product__slider_container">
+				<div class="product__slider_track">
+					<div class="product__slider_item product__slider_item-1">
+						<img src="src/img/nutri-1.png" alt="" class="product__slider_img">
+						<p class="product__slider_text">Нутривант Дрип</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-2">
+						<img src="src/img/nutri-2.png" alt="" class="product__slider_img">
+						<p class="product__slider_text">Нутривант Плюс Плодовый</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-3">
+						<img src="src/img/nutri-3.png" alt="" class="product__slider_img">
+						<p class="product__slider_text">Нутривант Универсальный</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-4">
+						<img src="src/img/nutri-4.png" alt="" class="product__slider_img">
+						<p class="product__slider_text">Нутривант Универсальный Бесхлорный</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+
+
+
+					<div class="product__slider_item-meristem product__slider_item-1">
+						<img src="src/img/meristem-1.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Стимакс для семян</p>
+						<a href="meristem/Stimax Seeds.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-2">
+						<img src="src/img/meristem-2.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Стимакс Урожай</p>
+						<a href="meristem/Stimax Yield.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-3">
+						<img src="src/img/meristem-3.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Стимакс Плюс</p>
+						<a href="meristem/Stimax Plus.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-4">
+						<img src="src/img/meristem-4.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Стимакс Рост</p>
+						<a href="meristem/Stimax Growth.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem product__slider_item-5">
+						<img src="src/img/meristem-5.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Стимакс Старт</p>
+						<a href="meristem/Stimax Start.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-6">
+						<img src="src/img/meristem-6.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Стимакс Универсал</p>
+						<a href="meristem/Stimax Universal.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem product__slider_item-7">
+						<img src="src/img/meristem-7.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Меристем B</p>
+						<a href="meristem/Meristem B.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-8">
+						<img src="src/img/meristem-8.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Меристем B-Mo</p>
+						<a href="meristem/Meristem B-Mo.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-9">
+						<img src="src/img/meristem-9.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Меристем Ca</p>
+						<a href="meristem/Meristem Ca.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-10">
+						<img src="src/img/meristem-10.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Меристем Ca-B</p>
+						<a href="meristem/Meristem Ca-B.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem product__slider_item-11">
+						<img src="src/img/meristem-11.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Меристем K</p>
+						<a href="meristem/Meristem K.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-12">
+						<img src="src/img/meristem-12.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Меристем Микс</p>
+						<a href="meristem/Meristem Mix.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem product__slider_item-13">
+						<img src="src/img/meristem-13.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Аминомакс Органик</p>
+						<a href="meristem/Aminomax Organic.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-14">
+						<img src="src/img/meristem-14.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Аминомакс Кальций</p>
+						<a href="meristem/Aminomax Calcium.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-15">
+						<img src="src/img/meristem-15.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Аминомакс Овощной</p>
+						<a href="meristem/Aminomax Vegetables.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-16">
+						<img src="src/img/meristem-16.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Аминомакс 10</p>
+						<a href="meristem/Aminomax 10.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem product__slider_item-17">
+						<img src="src/img/meristem-17.jpg" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Аминомакс 30</p>
+						<a href="meristem/Aminomax 30.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-18">
+						<img src="src/img/meristem-18.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Кафом</p>
+						<a href="categories/kafom.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-19">
+						<img src="src/img/meristem-19.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Меристем Микро</p>
+						<a href="categories/meristem-micro.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem product__slider_item-20">
+						<img src="src/img/meristem-20.png" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Истарка</p>
+						<a href="categories/istarka.html" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item-meristem  product__slider_item-21">
+						<img src="src/img/meristem-21.jpg" alt="" class="product__slider_img-meristem">
+						<p class="product__slider_text">Меристем Микро B</p>
+						<a href="meristem/Meristem Micro B.html" class="product__detail">Подробнее</a>
+					</div>
+
+					<div class="product__slider_item product__slider_item-5">
+						<img src="src/img/5. НП Зерновой.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс Зерновой</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-6">
+						<img src="src/img/6. НП 19-19-19.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс 19-19-19</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-7">
+						<img src="src/img/7. НП Кукуруза.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс Кукуруза</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-8">
+						<img src="src/img/8. НП Пивоваренный Ячмень.jpg" alt=""
+							class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс <br> Пивоваренный Ячмень</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-9">
+						<img src="src/img/9. НП Масличный.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс Масличный</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-10">
+						<img src="src/img/10. НП Сахарная Свекла.jpg" alt=""
+							class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс <br> Сахарная Свекла</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-11">
+						<img src="src/img/11. НП Картофель.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс <br> Картофель</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-12">
+						<img src="src/img/12. НП Виноград.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс <br> Виноград</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-13">
+						<img src="src/img/13. НП Томатный.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс <br> Томатный</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-14">
+						<img src="src/img/14. НП Бахчевый.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс <br> Бахчевый</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-15">
+						<img src="src/img/15. НП Рис.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс Рис</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+					<div class="product__slider_item product__slider_item-16">
+						<img src="src/img/16. НП Хлопок.jpg" alt="" class="product__slider_img product__slider_img-big">
+						<p class="product__slider_text">Нутривант Плюс <br> Хлопок</p>
+						<a href="" class="product__detail">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<button class="product__btn_next">
+				<img src="src/img/right-arrow.svg" alt="">
+			</button>
+		</div>
+
+	</section>
+
+	<section class="catalog">
+		<div class="catalog__wrapper">
+			<div class="catalog__info">
+				<h2 class="catalog__title">Каталоги и листовки о продукции</h2>
+				<p class="catalog__text">В каталогах продукции мы разместили подробную информацию об удобрениях. <br>
+					Любой текст, какой Вам нужен.</p>
+				<div class="catalog__buttons">
+					<button class="catalog__btn_prev">
+						<img src="src/img/left-arrow-1.svg" alt="">
+					</button>
+					<button class="catalog__btn_next">
+						<img src="src/img/right-arrow-1.svg" alt="">
+					</button>
+				</div>
+			</div>
+			<div class="catalog__slider_container">
+				<div class="catalog__slider_track">
+
+					<div class="catalog__slider_item catalog__slider_item-1">
+						<a href="src/documents/intrakrop-listovka-final_nov-17.pdf" class="catalog__slider_link"
+							target="_blank">
+							<img src="src/img/catalog-1.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-2">
+						<a href="src/documents/russia-meristem.pdf" class="catalog__slider_link" target="_blank">
+							<img src="src/img/catalog-2.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-3">
+						<a href="src/documents/Пекацид FINAL_September-3.pdf" class="catalog__slider_link" target="_blank">
+							<img src="src/img/catalog-10.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-4">
+						<a href="src/documents/Nutrivant Catalogue 2017.pdf" class="catalog__slider_link" target="_blank">
+							<img src="src/img/catalog-4.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-5">
+						<a href="src/documents/Картофель_каталог_11.pdf" class="catalog__slider_link" target="_blank">
+							<img src="src/img/catalog-11.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-6">
+						<a href="src/documents/SI FINAL с вылетами.pdf" class="catalog__slider_link" target="_blank">
+							<img src="src/img/catalog-12.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-7">
+						<a href="src/documents/Каталог Атлантика_Version 2020 - в печать.pdf" target="_blank"
+							class="catalog__slider_link">
+							<img src="src/img/catalog-7.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-8">
+						<a href="src/documents/Stimax Universal Final for print.pdf" class="catalog__slider_link"
+							target="_blank">
+							<img src="src/img/catalog-13.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-9">
+						<a href="src/documents/Nutrivant Drip_FINAL_А4 с вылетами.pdf" class="catalog__slider_link"
+							target="_blank">
+							<img src="src/img/catalog-14.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-10">
+						<a href="src/documents/Аминомакс Final_09.17.pdf" class="catalog__slider_link" target="_blank">
+							<img src="src/img/catalog-15.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-11">
+						<a href="src/documents/НУТРИВАНТ_УНИВЕРС_А4.pdf" class="catalog__slider_link" target="_blank">
+							<img src="src/img/catalog-16.jpg" alt="">
+						</a>
+					</div>
+					<div class="catalog__slider_item catalog__slider_item-12">
+						<a href="src/documents/Стимакс для семян_FINAL.pdf" target="_blank" class="catalog__slider_link">
+							<img src="src/img/catalog-17.jpg" alt="">
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="programm">
+		<h2 class="programm__title">Программы питания для всех культур</h2>
+		<div class="programm__slider_container">
+			<div class="programm__slider_track">
+				<div class="programm__slider_item programm__slider_item-1">
+					<img src="src/img/Зерновые.jpg" alt="">
+					<a download href="src/documents/Зерновые.pptx" class="programm__download">Скачать</a>
+				</div>
+				<div class="programm__slider_item programm__slider_item-2">
+					<img src="src/img/Картофель.jpg" alt="">
+					<a download href="src/documents/Картофель.pptx" class="programm__download">Скачать</a>
+				</div>
+				<div class="programm__slider_item programm__slider_item-3">
+					<img src="src/img/Кукуруза.jpg" alt="">
+					<a download href="src/documents/Кукуруза .pptx" class="programm__download">Скачать</a>
+				</div>
+				<div class="programm__slider_item programm__slider_item-4">
+					<img src="src/img/Подсолнечник.jpg" alt="">
+					<a download href="src/documents/Подсолнечник.pptx" class="programm__download">Скачать</a>
+				</div>
+				<div class="programm__slider_item programm__slider_item-5">
+					<img src="src/img/Рапс.jpg" alt="">
+					<a download href="src/documents/Рапс.pptx" class="programm__download">Скачать</a>
+				</div>
+				<div class="programm__slider_item programm__slider_item-6">
+					<img src="src/img/Сахарная свекла.jpg" alt="">
+					<a download href="src/documents/Сахарная свекла.pptx" class="programm__download">Скачать</a>
+				</div>
+				<div class="programm__slider_item programm__slider_item-7">
+					<img src="src/img/Соя.png" alt="">
+					<a download href="src/documents/Соя.pptx" class="programm__download">Скачать</a>
+				</div>
+			</div>
+		</div>
+		<div class="programm__buttons">
+			<button class="programm__btn_prev">
+				<img src="src/img/left-arrow-1.svg" alt="">
+			</button>
+			<button class="programm__btn_next">
+				<img src="src/img/right-arrow-1.svg" alt="">
+			</button>
+		</div>
+	</section>
+
+	<section class="rus">
+		<h2 class="rus__title">Nutritech System является эксклюзивным дистрибьютором в России</h2>
+		<div class="rus__map">
+			<script type="text/javascript" charset="utf-8" async
+				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af2fb9165479389c7346b3320db7eb2b5ffc30f0ef537d53604064adf9502e306&amp;height=613&amp;lang=ru_RU&amp;scroll=true"></script>
+		</div>
+		<div class="rus__legend">
+			<div class="rus__legend_box">
+				<img src="src/img/legend1.JPG" alt="" class="rus__legend_img">
+				<span class="rus_legend_text">Меристем + Нутривант</span>
+			</div>
+			<div class="rus__legend_box">
+				<img src="src/img/legend2.JPG" alt="" class="rus__legend_img">
+				<span class="rus_legend_text">Меристем</span>
+			</div>
+			<div class="rus__legend_box">
+				<img src="src/img/legend3.JPG" alt="" class="rus__legend_img">
+				<span class="rus_legend_text">Нутривант</span>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="video">
+		<h2 class="video__title">Видеоматериалы для партнеров</h2>
+		<div class="video__wrapper">
+			<button class="video__btn_prev">
+				<img src="src/img/left-arrow.svg" alt="">
+			</button>
+			<div class="video__slider_container">
+				<div class="video__slider_track">
+					<div class="video__slider_item video__slider_item-1">
+						<video width="90%" height="100%" poster="src/img/videoposter-1.jpg">
+							<source src="" type="video/mp4">
+						</video>
+						<p class="video__slider_text">«Нутривант Плюс Сахарная Свекла»</p>
+					</div>
+					<div class="video__slider_item video__slider_item-2">
+						<video width="90%" height="100%" poster="src/img/videoposter-2.jpg">
+							<source src="" type="video/mp4">
+						</video>
+						<p class="video__slider_text">«Нутривант Плюс Сахарная Свекла»</p>
+					</div>
+					<div class="video__slider_item video__slider_item-1">
+						<video width="90%" height="100%" poster="src/img/videoposter-1.jpg">
+							<source src="" type="video/mp4">
+						</video>
+						<p class="video__slider_text">«Нутривант Плюс Сахарная Свекла»</p>
+					</div>
+					<div class="video__slider_item video__slider_item-2">
+						<video width="90%" height="100%" poster="src/img/videoposter-2.jpg">
+							<source src="" type="video/mp4">
+						</video>
+						<p class="video__slider_text">«Нутривант Плюс Сахарная Свекла»</p>
+					</div>
+				</div>
+			</div>
+			<button class="video__btn_next">
+				<img src="src/img/right-arrow.svg" alt="">
+			</button>
+		</div>
+
+	</section>
+
+
+	<footer class="footer">
+		<div class="footer__inner">
+			<img src="src/img/footer_logo.svg" alt="" class="footer__logo">
+			<p class="footer__text">Nutritech System © 2020 Все права защищены</p>
+			<a href="#header" class="footer__arrow">
+				<img src="src/img/up-arrow.svg" alt="" class="footer__arrow_img">
+			</a>
+			<div class="footer__social">
+				<a href="" class="footer__social_link" target="_blank">
+					<img src="src/img/youtube_footer.svg" alt="" class="footer__social_icon">
+				</a>
+				<a href="https://www.instagram.com/nutritechsys/" class="footer__social_link" target="_blank">
+
+					<img src="src/img/instagram_footer.svg" alt="" class="footer__social_icon">
+				</a>
+				<a href="https://m.facebook.com/nutritechsys/?__tn__=%2Cg" class="footer__social_link" target="_blank">
+
+					<img src="src/img/facebook_footer.svg" alt="" class="footer__social_icon">
+				</a>
+
+			</div>
+			<div class="footer__number">
+				<img src="src/img/phone_footer.svg" alt="" class="footer__number_icon"> +7(495) 783-7048
+			</div>
+		</div>
+	</footer>
+	<script src="src/js/jquery.waypoints.min.js"></script>
+	<script src="src/js/script.js"></script>
+	<script src="src/js/video.js"></script>
+	<script src="src/js/programm.js"></script>
+	<script src="src/js/productSlider.js"></script>
+</body>
+
+</html>

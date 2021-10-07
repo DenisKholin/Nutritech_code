@@ -1,0 +1,37 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.none {
+	max-width: 111rem;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2.5rem;
+	padding-bottom: 8rem;
+
+	&__img {
+		width: 100%;
+	}
+
+	&__title {
+		margin: 1.7rem 0 2.4rem;
+	}
+
+	&__contact {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&_1 {
+			margin-top: 2.3rem;
+		}
+	}
+
+	&__icon {
+		&_1 {
+			margin-right: 3.7rem;
+		}
+		&_2 {
+			margin-right: 1rem;
+		}
+	}
+}

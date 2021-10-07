@@ -1,0 +1,81 @@
+@import "partials/params";
+@import "partials/mixins";
+
+.contact {
+	max-width: 111rem;
+	margin: 0 auto 9rem;
+	color: #192d0b;
+
+	&__title {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 3.2rem;
+
+		@media screen and (max-width: $large-size) {
+			text-align: center;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: $large-size) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__map {
+		border: 3px solid #a8d340;
+		// box-sizing: padding-box;
+		width: 60%;
+
+		@media screen and (max-width: $large-size) {
+			margin-bottom: 3rem;
+			width: 90%;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 37%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 2rem 0 2.5rem 2.5rem;
+		background-color: #e8ffb6;
+
+		@media screen and (max-width: $large-size) {
+			width: 90%;
+		}
+
+		&_serb {
+			padding: 3.7rem 0 3.7rem 2.5rem;
+		}
+
+		&_text {
+			display: flex;
+			align-items: center;
+			font-size: 1.6rem;
+
+			a:visited,
+			a:link {
+				color: #192d0b;
+				text-decoration: underline;
+			}
+		}
+
+		&_icon {
+			margin-right: 2.2rem;
+			max-width: 2.4rem;
+		}
+	}
+}
+
+iframe {
+	width: 100%;
+}

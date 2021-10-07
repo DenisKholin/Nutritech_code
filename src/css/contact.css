@@ -1,0 +1,68 @@
+.contact {
+  width: 111rem;
+  margin: 0 auto 9rem;
+  color: #192d0b;
+}
+
+.contact__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__map {
+  border: 3px solid #a8d340;
+}
+
+.contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 44.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0 2.5rem 2.5rem;
+  background-color: #e8ffb6;
+}
+
+.contact__info_serb {
+  padding: 3.7rem 0 3.7rem 2.5rem;
+}
+
+.contact__info_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+}
+
+.contact__info_text a:visited,
+.contact__info_text a:link {
+  color: #192d0b;
+  text-decoration: underline;
+}
+
+.contact__info_icon {
+  margin-right: 2.2rem;
+  max-width: 2.4rem;
+}

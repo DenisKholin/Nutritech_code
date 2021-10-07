@@ -1,0 +1,93 @@
+.touch {
+  width: 111rem;
+  margin: 0 auto 9rem;
+  color: #192d0b;
+}
+
+.touch__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.touch__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.touch__map {
+  border: 3px solid #a8d340;
+}
+
+.touch__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.touch__info_bel .touch__info_1 {
+  height: 14.5rem;
+}
+
+.touch__info_bel .touch__info_2 {
+  height: 21.4rem;
+}
+
+.touch__info_kirgiz .touch__info_1 {
+  height: 14rem;
+}
+
+.touch__info_kirgiz .touch__info_2 {
+  height: 15.9rem;
+}
+
+.touch__info_1, .touch__info_2 {
+  width: 44.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0 2.5rem 2.5rem;
+  background-color: #e8ffb6;
+}
+
+.touch__info_1 {
+  margin-bottom: 3.2rem;
+}
+
+.touch__info_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+}
+
+.touch__info_text a:visited,
+.touch__info_text a:link {
+  color: #192d0b;
+  text-decoration: underline;
+}
+
+.touch__info_icon {
+  margin-right: 2.2rem;
+}
